@@ -1,0 +1,21 @@
+<!--page/search/index.wxml-->
+<view class='wrapper'>
+  <view class='search' bindtap='search'>
+    <icon type='search' size='16'></icon>
+    <input placeholder='搜索电影' placeholder-class='size' bindinput='input'></input>
+    <text class='cancel' bindtap='first'>取消</text>
+  </view>
+  <view class='show'>
+    <block wx:for='{{list}}' wx:key='{{item}}'>
+      <view class='showlist' data-id='{{item.id}}' bindtap='showmain'>
+        <view class='img'>
+          <image src='{{item.url}}'></image>          
+        </view>
+        <view class='showmain'>
+          <view>{{item.h}}</view>
+          <view>{{item.score}}分/{{item.year}}/{{item.name}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

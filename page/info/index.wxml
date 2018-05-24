@@ -1,0 +1,23 @@
+<!--page/info/index.wxml-->
+<view class='wrapper'>
+  <view class='top'>
+    <view class='img'>
+     <image src='{{url}}'></image>     
+    </view>
+  </view>
+  <view class='main'>
+    <text>{{aka}}</text>
+    <text>{{year}}/{{style}}</text>
+    <text>原名：{{title}}</text>
+    <text>国家：{{country}}</text>
+  </view>
+  <view class='btn'>
+    <view>想看</view>
+    <view>看过</view>
+  </view>
+  <view class='foot'>
+    <text>简介</text>
+    <text class='{{zhan}}'>{{p}}</text>
+    <text class='b' bindtap='open'>{{open}}</text>
+  </view>
+</view>

@@ -1,0 +1,114 @@
+/* page/more/index.wxss */
+.wrapper{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.top{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  z-index: 1;
+  background: #f7f7f7;
+}
+.top view{
+  text-align: center;
+  line-height: 100rpx;
+}
+.top view:nth-of-type(1){
+  flex-grow: 1;
+}
+.top view:nth-of-type(2){
+  flex-grow: 1;
+}
+.top .active{
+  font-weight: 600;
+  color: lightgreen;
+  border-bottom: 1px solid lightgreen;
+}
+.top .noact{
+  color: #ddd;
+}
+.main{
+  width: 100%;
+  margin-top: 100rpx;
+  position: relative;
+}
+.main .content{
+  width: 100%;
+  padding: 30rpx;
+  background-color: white;
+  display: flex;
+  position: relative;  
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #eee;
+  box-sizing: border-box;
+  align-items: center;
+}
+.main .content .img{
+  width: 25%;
+  height: 270rpx;
+}
+.main .content .img image{
+  width: 100%;
+  height: 100%;
+}
+.main .content .content-right{
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: column;
+}
+.main .content .content-right text:nth-of-type(1){
+  font-size: 42rpx;
+  font-weight: 600;
+}
+.main .content .content-right text:nth-of-type(2),
+.main .content .content-right text:nth-of-type(3),
+.main .content .content-right text:nth-of-type(4){
+  width: 75%;
+  font-size: 30rpx;
+  color: #ccc;
+  margin-top: 5rpx;
+}
+.main .content .content-right .fen{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 5rpx;
+}
+.main .content .content-right .fen text:nth-of-type(1){
+  width: 55px;
+  height: 10px;
+  background-image: url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png); 
+  background-repeat: no-repeat;
+  position: absolute; 
+  top: 12rpx;
+  left: 0rpx;
+}
+.main .content .content-right .fen text:nth-of-type(2){
+    margin-left: 140rpx;  
+}
+.main .content .content-right .fen .w{
+  background-position: 0, -44px;
+}
+.main .content .content-right text:nth-of-type(5){
+  color: aqua;
+  font-size: 30rpx;
+}
+.main .content .btn{
+  width: 100rpx;
+  height: 60rpx;
+  position: absolute;
+  border: 1px solid orange;
+  right: 60rpx;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: orange;
+  text-align: center;
+  line-height: 60rpx;
+}

@@ -1,0 +1,123 @@
+.wrapper{
+  width: 100%;
+  height: 100%;
+}
+.search{
+  width: 100%;
+  padding: 20rpx 30rpx;
+  background-color: white;
+  position: relative;
+  border: 1px solid #eee;
+  border-left: none;
+  border-right: none; 
+  box-sizing: border-box;
+}
+.search icon{
+  position: absolute;
+  left: 20rpx;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.search text{
+  margin-left: 40rpx;
+  color: #eee;
+  font-size: 30rpx;
+}
+.moive{
+  width: 100%;
+  background: white;
+  margin-top: 30rpx;
+  border: 1px solid #eee;
+  border-left: none;
+  border-right: none; 
+}
+.moive .top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  padding: 25rpx 35rpx;
+  box-sizing: border-box;
+}
+.moive .top text:nth-child(1){
+  font-size: 40rpx;
+}
+.moive .top text:nth-child(2){
+  color: #32dd32;
+}
+.moive .bottom{
+  width: 100%;
+  padding: 25rpx 35rpx;
+}
+.moive .bottom .yi{
+  width: 100%;
+  white-space: nowrap;
+}
+.moive .bottom .main{
+  width: 25%;
+  /* border: 1px solid red;  */
+  margin-right: 20rpx;
+  display: inline-block;
+}
+.moive .bottom .main .img{
+  width: 100%;
+  height: 280rpx;
+}
+.moive .bottom .main text{
+  display: block;
+  text-align: center;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.moive .bottom .main text:nth-of-type(2){
+  font-size: 20rpx;
+}
+.moive .bottom .main text:nth-of-type(3){
+  font-size: 25rpx;
+  color: #ccc;
+}
+
+
+.wrapper .moive .bottom .yi .main .score{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper .moive .bottom .yi .main .score text:nth-of-type(1){
+  width: 55px;
+  height: 10px;
+   background-image: url(https://img3.doubanio.com/f/shire/b8f4c3672ef81106701071831e22422a745d3b74/pics/rating_icons/ic_rating_s.png); 
+  background-repeat: no-repeat;
+  /* border: 1px solid red; */
+}
+.wrapper .moive .bottom .yi .main .score .star0{
+  background-position: 0, 0; 
+}
+.wrapper .moive .bottom .yi .main .score .star1{
+  background-position: 0, -11px; 
+}
+.wrapper .moive .bottom .yi .main .score .star2{
+  background-position: 0, -22px; 
+}
+.wrapper .moive .bottom .yi .main .score .star8{
+  background-position: 0, -88px; 
+}
+.wrapper .moive .bottom .yi .main .score .star3{
+  background-position: 0, -33px; 
+}
+.wrapper .moive .bottom .yi .main .score .star4{
+  background-position: 0, -44px; 
+}
+.wrapper .moive .bottom .yi .main .score .star5{
+  background-position: 0, -55px; 
+}
+.wrapper .moive .bottom .yi .main .score .star6{
+  background-position: 0, -66px; 
+}
+.wrapper .moive .bottom .yi .main .score .star7{
+  background-position: 0, -77px; 
+}
+.wrapper .moive .bottom .yi .main .score .star9{
+  background-position: 0, -99px; 
+}

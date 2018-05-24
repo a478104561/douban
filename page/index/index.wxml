@@ -1,0 +1,48 @@
+<view class='wrapper'>
+  <view class='search' bindtap='search'>
+    <icon type='search' size='16'></icon>
+    <text>搜索电影</text>
+  </view>
+  <view class='moive'>
+    <view class='top'>
+      <text>影院热映</text>
+      <text bindtap='bindtomore' data-more='theaters'>更多></text>
+    </view>
+     <view class='bottom'>
+        <scroll-view scroll-x class='yi'>
+          <block wx:for='{{theaters}}' wx:key='{{item}}'>
+            <view class='main' bindtap='getinfo' data-id='{{item.id}}'>
+               <image src='{{item.url}}' class='img'></image>
+               <text>{{item.h}}</text>
+               <view class='score'>
+                <text class='star{{item.star}}'></text>
+                <text>{{item.fen}}</text>
+               </view>
+               <text>{{item.p}}人想看</text>
+            </view>
+          </block> 
+        </scroll-view>
+    </view> 
+  </view>
+  <view class='moive'>
+    <view class='top'>
+      <text>即将上映</text>
+      <text bindtap='bindtomore' data-more='soon'>更多></text>
+    </view>
+    <view class='bottom'>
+      <scroll-view scroll-x class='yi'>
+        <block wx:for='{{soon}}' wx:key='{{item}}'>
+         <view class='main' bindtap='getinfo' data-id='{{item.id}}'>
+          <image src='{{item.url}}' class='img'></image>
+          <text>{{item.h}}</text>
+          <view class='score'>
+            <text class='star{{item.star}}'></text>
+            <text>{{item.fen}}</text>
+          </view>
+          <text>{{item.p}}人想看</text>
+         </view>
+        </block>
+      </scroll-view>
+    </view>
+  </view>
+</view>

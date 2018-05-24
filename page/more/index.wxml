@@ -1,0 +1,27 @@
+<view class='wrapper'>
+  <view class='top' bindtap='active'>
+    <view class="{{theaters ? 'active' : 'noact'}}" data-id='theaters'>影院热映</view>
+    <view class="{{soon ? 'active' : 'noact'}}" data-id='soon'>即将上映</view>
+  </view>
+  <scroll-view class='main' style="height: 100%;" scroll-y bindscrolltolower='shua' lower-threshold>
+    <block wx:for='{{thea}}' wx:key='{{item}}'>
+      <view class='content' bindtap='showinfo' data-id='{{item.id}}'>
+        <view class='img'>
+          <image src='{{item.url}}'></image>
+        </view>
+        <view class='content-right'>
+          <text>{{item.title}}</text>
+          <text>导演：{{item.d}}</text>
+          <text>主演：{{item.player}}</text>
+          <text>类型：{{item.style}}</text>          
+          <view class='fen'>
+             <text class='w'></text> 
+             <text>{{item.score}}</text> 
+          </view>
+          <text>{{item.peop}}人想看</text>
+        </view>
+        <view class='btn' bindtap='kan'>想看</view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
